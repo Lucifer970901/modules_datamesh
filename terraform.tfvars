@@ -6,3 +6,14 @@ parent_compartment = "ocid1.compartment.oc1..aaaaaaaaukottugsmj5vmneywbzvecjbg5p
 ### Region
 region="us-ashburn-1"
 vcn_dns_label="fin"
+
+#Sub compartments
+subcompartments = {
+  product_domain = {description = "compartment for product related resources",enable_delete="true"}
+  customer_domain = {description = "compartment for customer related resources",enable_delete="true"}
+  sales_domain = {description = "compartment for sales related resources",enable_delete="true"}
+  dataOps_shared = {description = "compartment for dataOps related resources",enable_delete="true"}
+  database = {description = "compartment for database related resources",enable_delete="true"}
+  networking = {description = "compartment for networking related resources",enable_delete="true"}
+  security = {description = "compartment for security related resources",enable_delete="true"}
+}
