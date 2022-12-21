@@ -10,7 +10,7 @@ module "sub_compartments" {
   compartment_id      = module.main_compartment.compartment_id_output
   
 
-  count = length(var.sub_compartments) > 0 ? 1 : 0
+  count = length(var.subcompartments) > 0 ? 1 : 0
 }
 
 
