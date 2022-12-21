@@ -3,7 +3,7 @@ variable "compartment_description" {
   type        = string
 }
 
-variable "compartment_id" {
+variable "parent_compartment_id" {
   description = "parent compartment id under which this compartment is created"
   type        = string
 
