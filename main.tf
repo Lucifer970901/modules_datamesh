@@ -14,13 +14,13 @@ module "sub_compartments" {
 }
 
   module "base_vcn" {
-  source              = ".Networking/vcn"
+  source              = "./Networking/vcn"
   network_compartment = module.sub_compartments.compartment_id_output
   vcn_dns_label       = var.vcn_dns_label
 }
 
 module "base_subnet" {
-  source              = ".Networking/subnets"
+  source              = "./Networking/subnets"
   subnets             = var.subnets
   vcn_id              = module.base_vcn.vcn_id_output
   network_compartment = var.network_compartment
