@@ -3,9 +3,6 @@ variable "subcompartments" {
    default     = {}
 }
 
-variable "compartment_description" {
-  type        = string
-}
 
 variable "compartment_id" {
   description = "retail compartment id"
