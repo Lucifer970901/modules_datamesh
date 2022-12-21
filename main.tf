@@ -6,7 +6,7 @@ module "main_compartment" {
   
 module "sub_compartments" {
   source              = "./compartments/sub_compartments"
-  sub_compartments    = var.sub_compartments
+  sub_compartments    = var.subcompartments
   compartment_id      = module.main_compartment.compartment_id_output
   
 
