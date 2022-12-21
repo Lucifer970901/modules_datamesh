@@ -15,7 +15,7 @@ module "sub_compartments" {
 
   module "base_vcn" {
   source              = ".Networking/vcn"
-  network_compartment = var.network_compartment
+  network_compartment = module.sub_compartments.compartment_id_output
   vcn_dns_label       = var.vcn_dns_label
 }
 
